@@ -1,0 +1,4 @@
+ÇÔ¸Õà»Ô´à¤Ã×èÍ§ Smart Card
+1.¡´»ØèÁ Window+R 
+	services.msc
+Service > Smart Card > Properties > Manual > restart
