@@ -351,24 +351,29 @@ function ShowAddress(address = "") {
     obj.address_full = address;//เก็บค่า address
     output["address_full"] = obj.address_full;
     //$("#address").html(address_full);
+    
 
-    setTimeout(function(){
-       $("#person-cid").html(output["cid"]);
-       $("#person-birthday").html(output["birthday_full"]);
-       $("#person-address").html(output["address_full"]);
-       $("#person-fullname-th").html(output["fullname_th"]);
-    });
 }
 function ShowImage(mImgName){
-    $("#person-pImg").hide();
+   
     output["image"]=mImgName;
     var res = output["image"].split("/");
     res = res[3].split("?");
     $("#person-md5-imag").val(res[0]);
-    $("#person-pImg").attr('src',output['image']);
-    $("#person-pImg").fadeIn(1000);
+    ShowOutput();
+    
 }
-
+function ShowOutput(){
+  setTimeout(function(){
+    $("#person-cid").html(output["cid"]);
+    $("#person-birthday").html(output["birthday_full"]);
+    $("#person-address").html(output["address_full"]);
+    $("#person-fullname-th").html(output["fullname_th"]);
+    $("#person-pImg").attr('src',output['image']);
+    $("#person-pImg").hide();
+    $("#person-pImg").fadeIn(1000);
+ });
+}
 function ClearOutput(){
   $("#person-pImg").hide();
   $("#person-cid").html("");

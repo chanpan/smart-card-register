@@ -7,7 +7,8 @@ let child="";
 app.on("ready", ()=>{
 	mainWin = new BrowserWindow({ 
     width:1200, height:600,
-   
+    minWidth:1024,
+    minHeight: 600,
   });
 	mainWin.loadURL(`file://${__dirname}/index.html`);
 	app.on('closed', function () { mainWin = null; app.exit() });
