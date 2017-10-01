@@ -55,3 +55,27 @@ h3{
     font-size:20pt;
     font-weight: bold;
 }
+.nav-tabs{
+    background: #ff6600;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.nav-tabs li a{
+    color:#fff;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #fff;
+    cursor: default;
+    background-color: #1f1c1c;
+    border: 1px solid #151414;
+    margin-top: 0px;
+    border-bottom-color: transparent;
+    border-bottom: 2px solid black;
+}
+.nav-tabs>li>a:hover {
+    border-color: #f60 #f60 #f60;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #ff5b00;
+}
