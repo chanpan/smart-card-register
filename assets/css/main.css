@@ -1,0 +1,57 @@
+body{
+    background: #f3f3f3;
+    font-family: 'TH Baijam';
+    font-size:16pt;
+    /* color: rgb(85, 85, 85); */
+     /* font-family: 'Kanit'; */
+}
+#home ,#menu1, #menu2, #menu3{
+    background: white;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    padding: 15px;
+}
+input[type="radio"] {
+    cursor: pointer;
+    /* -webkit-appearance: none; */
+    appearance: none;
+    background: #34495E;
+    border-radius: 1px;
+    box-sizing: border-box;
+    position: relative;
+    box-sizing: content-box;
+    width: 20px;
+    height: 20px;
+    border-width: 0;
+    transition: all 0.3s linear;
+    margin-right: 5px;
+    position: relative;
+    top: 7px;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    /* -webkit-appearance: none; */
+    appearance: none;
+    background: #34495E;
+    border-radius: 1px;
+    box-sizing: border-box;
+    position: relative;
+    box-sizing: content-box;
+    width: 16px;
+    height: 20px;
+    border-width: 0;
+    transition: all 0.3s linear;
+    margin-right: 10px;
+    position: relative;
+    top: -4px;
+    /* right: 5px; */
+    /* margin-right: 10px; */
+}
+.cursor{
+    cursor: pointer;
+}
+h3{
+    font-size:20pt;
+    font-weight: bold;
+}
