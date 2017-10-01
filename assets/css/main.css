@@ -59,6 +59,7 @@ h3{
     background: #ff6600;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    font-size: 16pt;
 }
 .nav-tabs li a{
     color:#fff;
@@ -78,4 +79,13 @@ h3{
 .nav>li>a:focus, .nav>li>a:hover {
     text-decoration: none;
     background-color: #ff5b00;
+}
+#header-txt{
+    font-size: 30pt;
+    font-weight: bold;
+    color: #ff6600;
+    background: white;
+    position: relative;
+    width: 270px;
+    text-align: center;
 }
