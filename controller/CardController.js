@@ -11,6 +11,9 @@ function CopyDefaultDataBase(){
 }
 
 function Init(){
-    CopyDefaultDataBase();
+    file.CreateFolder("cards").subscribe((res)=>{
+        CopyDefaultDataBase();
+        require("../shared/cards/Card.js");
+    });
 }
 

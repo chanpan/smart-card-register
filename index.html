@@ -8,6 +8,7 @@
 	<link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="./assets/css/main.css">
+	<base href="./">
 	<!-- JavaScript Core -->
 	<script>
 		window.$ = window.jQuery = require('jquery');
@@ -49,8 +50,9 @@
 
 	</div>
 	<script>
-		//require("./controller/CardController.js");
-		require("./shared/cards/Card.js");
+		
+		require("./controller/CardController.js");
+		//require("./shared/cards/Card.js");
 		// knex.CreateTable('demo',['id','name'],['id'],).then(res=>console.log("success")).catch();
 	</script>
 </body>

@@ -5,9 +5,10 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
+    "rebuild-all":"electron-rebuild",
     "rebuild-buffertool": "electron-rebuild -f -w ./node_modules/buffertool",
     "rebuild-sqlite3": "electron-rebuild -f -w ./node_modules/sqlite3",
-    "build": "electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/images/logo.ico --prune=true --out=release"
+    "build": "electron-packager . --icon=assets/images/logo.ico --out=release"
   },
   "keywords": [],
   "author": "",

@@ -8,6 +8,7 @@ const legacy = require("legacy-encoding");
 const md5 = require("md5");
 const fs = require("fs");
 const opn = require("opn");
+const utils = require("../utils/Utils.js");
 
 /** Var */
 var obj = {
@@ -22,8 +23,9 @@ var obj = {
   birthday_full: "",
   cid: "",
   pathname: __dirname,
-  dirAsset: './assets/images',//obj.pathname + "/assets",
-  dir: "./assets/images",
+  dirAsset:utils.HomePath()+"/cards/images",//obj.pathname + "/assets",
+  dir:utils.HomePath()+"/cards/images",
+  rootPath:utils.HomePath(),
   haveCard: false,
   mImgTemp: "",
   checkMod: 0
